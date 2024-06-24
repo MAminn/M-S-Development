@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <div className="w-full h-[65px] fixed top-0  z-50 ">
+      <div className="w-full h-full flex flex-row items-center bg-[#03001456] justify-around m-auto px-[10px] backdrop-blur ">
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu Button */}
         <button
-          className="block md:hidden text-gray-200 focus:outline-none right-0 transition-all duration-75 "
+          className="block md:hidden text-gray-200 focus:outline-none right-0 transition-all duration-75"
           onClick={() => setIsOpen(!isOpen)}
         >
           {!isOpen ? (
@@ -65,62 +65,42 @@ const Navbar = () => {
             <IoMdClose className=" text-[25px]" />
           )}
         </button>
-        {/* Mobile Menu
-
-        <div
-          className={`${
-            isOpen
-              ? "absolute top-16 left-0 right-0  md:hidden  backdrop-blur-lg z-50"
-              : "hidden"
-          }`}
-        >
-          <div className="flex flex-col space-y-3  py-3 px-4 rounded-md shadow-lg text-center">
+      </div>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="absolute top-16 left-0 right-0 md:hidden z-50 h-screen bg-[#03001417]  text-center backdrop-blur rounded-lg">
+          <div className="flex flex-col pt-14 gap-10 space-y-3 py-3 px-4 rounded-md h-full backdrop-blur font-bold text-gray-200 text-[20px]  ">
             <a
               href="#about-me"
-              className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
+              className="block py-2 transition duration-300 ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500"
+              onClick={() => setIsOpen(false)}
             >
               About me
             </a>
             <a
               href="#skills"
-              className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
+              className="block py-2 transition duration-300 ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500"
+              onClick={() => setIsOpen(false)}
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
+              className="block py-2 transition duration-300 ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500"
+              onClick={() => setIsOpen(false)}
             >
               Projects
             </a>
+            <a
+              href="#contact"
+              className="block py-2 transition duration-300 ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </a>
           </div>
-        </div> */}
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="absolute top-16 left-0 right-0 mt-2 md:hidden z-50 ">
-            <div className="flex flex-col space-y-3  py-3 px-4 rounded-md shadow-lg ">
-              <a
-                href="#about-me"
-                className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
-              >
-                About me
-              </a>
-              <a
-                href="#skills"
-                className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
-              >
-                Skills
-              </a>
-              <a
-                href="#projects"
-                className="block py-2 text-gray-200 hover:text-gray-100 transition duration-300 ease-in-out"
-              >
-                Projects
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
