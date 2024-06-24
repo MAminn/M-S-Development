@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 interface ParallaxProps {
   type: "services" | "portfolio"; // Define the possible types for 'type'
@@ -15,35 +16,33 @@ const Parallax: React.FC<ParallaxProps> = ({ type }) => {
     offset: ["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div
-      className="relative flex items-center justify-center overflow-hidden w-full lg:h-[800px] max-lg:h-[600px]"
+      className="relative flex items-center justify-center overflow-hidden w-screen h-screen"
       ref={ref}
     >
       <motion.h1
         style={{ y: yText }}
-        className="text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold lg:text-[72px] max-lg:text-[50px]"
+        className="text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold lg:text-[72px] max-lg:text-[40px]"
       >
         {type === "services" ? "What We Did?" : "Our Portfolio"}
       </motion.h1>
 
-      <motion.div
-        className="absolute w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url("mountains.png")` }}
-      ></motion.div>
+      <motion.div className="absolute bottom-0 w-full h-full max-lg:max-w-[767px] max-lg:h-[400px] ">
+        <Image src={"/mountains.png"} alt="" fill />
+      </motion.div>
 
       <motion.div
         style={{
           y: yBg,
-          backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
-          })`,
         }}
-        className="absolute w-full h-full bg-cover bg-center"
-      ></motion.div>
+        className="absolute bottom-10 w-full h-full max-lg:max-w-[400px]  max-lg:h-[400px]"
+      >
+        <Image src={"/planets.png"} alt="" fill />
+      </motion.div>
     </div>
   );
 };
