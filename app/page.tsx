@@ -8,14 +8,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" h-full w-full flex flex-col gap-20">  
-        <Hero />
-        <Skills />
-        <Encryption />
-        <Parallax type="services" />
-        <Projects />
-        <Contact />
-        
+    <main className=" h-full w-full flex flex-col gap-10">
+      <Hero />
+      <Skills />
+      <Encryption />
+      <Parallax type="services" />
+      <Projects />
+      <Contact />
     </main>
   );
 }

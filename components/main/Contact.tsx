@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   return (
     <motion.div
       ref={inViewRef}
-      className="min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 py-8 px-4 lg:px-0"
+      className="lg:h-[600px] max-lg:min-h-screen mb-14 flex flex-col lg:flex-row items-center justify-center gap-8  px-4 lg:px-0 z-[45]"
       variants={variants}
       initial="initial"
       animate={inView ? "animate" : "initial"}
