@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
           <span className="text-lg">+1 234 5678</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative w-full lg:w-auto">
+      <div className=" flex-1 relative w-full lg:w-auto z-40">
         <motion.div
           className=" stroke-orange-400 absolute top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20 "
           initial={{ opacity: 1 }}

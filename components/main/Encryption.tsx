@@ -22,7 +22,7 @@ const Encryption = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col items-center justify-center translate-y-[-50px] z-50 absolute  w-auto h-full min-h-screen">
+      <div className="flex flex-col items-center justify-center translate-y-[-50px] z-40 absolute  w-auto h-full min-h-screen">
         <div className="flex flex-col items-center group cursor-pointer w-auto">
           <Image
             src="/LockTop.png"
