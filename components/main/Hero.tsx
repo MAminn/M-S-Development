@@ -12,7 +12,7 @@ const Hero = () => {
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
-      {/* <div className="absolute top-0 left-0 w-full h-full bg-transparent "></div> */}
+      <div className="absolute top-0 left-0 w-full h-full bg-transparent z-[5]"></div>
       <HeroContent />
     </section>
   );
