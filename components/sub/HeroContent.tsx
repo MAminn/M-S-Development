@@ -58,7 +58,7 @@ const HeroContent = () => {
           See the Latest Works
         </motion.a>
         {/* ADD CONTACT  */}
-        <Link href="#contact" className=" ">
+        <Link href="/contact" className=" ">
           <motion.div
             variants={slideInFromTop}
             className="Welcome-box max-md:flex max-md:justify-center max-md:items-center py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] z-40 cursor-pointer"

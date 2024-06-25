@@ -11,12 +11,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full h-[65px] relative top-0  z-50 ">
-      <div className="w-full h-full flex absolute flex-row items-center z-50 background-blur border-none justify-around m-auto px-[10px]  ">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+    <div className="w-full h-[65px] fixed top-0  z-50 ">
+      <div className="w-full h-full flex  flex-row items-center z-50 background-blur border-none justify-around m-auto px-[10px]  ">
+        <a href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/NavLogo.png"
             alt="logo"
@@ -74,7 +71,7 @@ const Navbar = () => {
         animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
         className={`${
           isOpen
-            ? "absolute top-[65px] left-0 right-0 md:hidden z-40 h-screen background-blur  text-[20px] border-none text-center"
+            ? "absolute top-[64px] left-0 right-0 md:hidden z-40 h-screen background-blur  text-[20px] border-none text-center"
             : "hidden"
         }`}
       >
@@ -101,7 +98,7 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="block py-2 transition duration-300 ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500"
             onClick={() => setIsOpen(false)}
           >

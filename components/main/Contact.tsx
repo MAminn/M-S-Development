@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   return (
     <motion.div
       ref={inViewRef}
-      className="lg:h-[600px] max-lg:min-h-screen mb-14 flex flex-col lg:flex-row items-center justify-center gap-8  px-4 lg:px-0 z-[45]"
+      className="lg:h-[600px] max-lg:min-h-screen my-32 mb-14 flex flex-col lg:flex-row items-center justify-center gap-8  px-4 lg:px-0 "
       variants={variants}
       initial="initial"
       animate={inView ? "animate" : "initial"}
@@ -80,9 +80,9 @@ const Contact: React.FC = () => {
           <span className="text-lg">+1 234 5678</span>
         </motion.div>
       </motion.div>
-      <div className="formContainer flex-1 relative w-full lg:w-auto">
+      <div className=" flex-1 relative w-full lg:w-auto">
         <motion.div
-          className=" stroke-orange-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20 "
+          className=" stroke-orange-400 absolute top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20 "
           initial={{ opacity: 1 }}
           animate={inView ? { opacity: 0 } : { opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 4, duration: 1 }}
-          className="flex flex-col gap-4 w-full max-w-sm mx-auto lg:mx-0 z-50"
+          className="flex flex-col gap-4 w-full absolute max-w-sm mx-auto top-[-12.75rem] lg:mx-0 z-50"
         >
           <input
             type="text"

@@ -14,7 +14,7 @@ export default function Home() {
       <Encryption />
       <Parallax type="services" />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
