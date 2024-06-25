@@ -53,7 +53,7 @@ const HeroContent = () => {
         <motion.a
           href="#projects"
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white px-2  rounded-lg max-w-[250px] z-50 cursor-pointer"
+          className="py-2 button-primary text-center text-white px-2  rounded-lg max-w-[250px] z-40 cursor-pointer"
         >
           See the Latest Works
         </motion.a>
@@ -61,7 +61,7 @@ const HeroContent = () => {
         <Link href="#contact" className=" ">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box max-md:flex max-md:justify-center max-md:items-center py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] z-50 cursor-pointer"
+            className="Welcome-box max-md:flex max-md:justify-center max-md:items-center py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] z-40 cursor-pointer"
           >
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
             <h1 className=" text-[15px] text-white ">Contact Me!</h1>
