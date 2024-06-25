@@ -73,5 +73,6 @@ body {
 }
 
 .background-blur {
-  backdrop-filter: blur(8px);
+  background-color: rgba(54, 50, 62, 0.34);
+  backdrop-filter: blur(16px) brightness(100%);
 }
