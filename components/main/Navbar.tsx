@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[65px] fixed top-0  z-50 ">
-      <div className="w-full h-full flex flex-row items-center bg-[#03001456] max-md:bg-black/80 justify-around m-auto px-[10px] max-md:backdrop-blur ">
+      <div className="w-full h-full flex flex-row items-center bg-white/30 max-md:backdrop-blur-md  justify-around m-auto px-[10px]  ">
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -68,7 +68,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 md:hidden z-50 h-screen bg-black/80  text-center  rounded-lg">
+        <div className="absolute top-16 left-0 right-0 md:hidden z-50 h-screen bg-white/30 max-md:backdrop-blur-md text-center  rounded-lg">
           <div className="flex flex-col pt-14 gap-10 space-y-3 py-3 px-4 rounded-md h-full font-bold text-gray-200 text-[20px]  ">
             <a
               href="#about-me"
