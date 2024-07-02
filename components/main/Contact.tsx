@@ -57,49 +57,48 @@ const Contact: React.FC = () => {
   return (
     <motion.div
       ref={inViewRef}
-      className="lg:h-[600px] max-lg:min-h-screen my-32 mb-14 flex flex-col lg:flex-row items-center justify-center gap-8  px-4 lg:px-0 "
+      className='lg:h-[600px] max-lg:min-h-screen my-32 mb-14 flex flex-col lg:flex-row items-center justify-center gap-8  px-4 lg:px-0 '
       variants={variants}
-      initial="initial"
+      initial='initial'
       animate={inView ? "animate" : "initial"}
-      id="contact"
-    >
-      <motion.div className="textContainer flex-1 flex flex-col gap-8 text-center lg:text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-        <motion.h1 variants={variants} className="text-3xl lg:text-4xl">
+      id='contact'>
+      <motion.div className='textContainer flex-1 flex flex-col gap-8 text-center lg:text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
+        <motion.h1 variants={variants} className='text-3xl lg:text-4xl'>
           Let&apos;s work together
         </motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-xl font-semibold">Mail</h2>
-          <span className="text-lg">hello@react.dev</span>
+        <motion.div className='item' variants={variants}>
+          <h2 className='text-xl font-semibold'>Mail</h2>
+          <span className='text-lg'>
+            Muhammedboorham@gmail.com | saif.ahmed1215@gmail.com
+          </span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-xl font-semibold">Address</h2>
-          <span className="text-lg">Hello street New York</span>
+        <motion.div className='item' variants={variants}>
+          <h2 className='text-xl font-semibold'>Address</h2>
+          <span className='text-lg'>Cairo, Egypt</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-xl font-semibold">Phone</h2>
-          <span className="text-lg">+1 234 5678</span>
+        <motion.div className='item' variants={variants}>
+          <h2 className='text-xl font-semibold'>Phone</h2>
+          <span className='text-lg'>+201551169517 | +201557788195</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative w-full lg:w-auto z-40">
+      <div className=' flex-1 relative w-full lg:w-auto z-40'>
         <motion.div
-          className=" stroke-orange-400 absolute top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20 "
+          className=' stroke-orange-400 absolute top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20 '
           initial={{ opacity: 1 }}
           animate={inView ? { opacity: 0 } : { opacity: 1 }}
-          transition={{ delay: 3, duration: 1 }}
-        >
+          transition={{ delay: 3, duration: 1 }}>
           <svg
-            width="400px"
-            height="400px"
-            viewBox="0 0 32.666 32.666"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            width='400px'
+            height='400px'
+            viewBox='0 0 32.666 32.666'
+            xmlns='http://www.w3.org/2000/svg'>
             <motion.path
               strokeWidth={0.2}
-              fill="none"
+              fill='none'
               initial={{ pathLength: 0 }}
               animate={inView && { pathLength: 1 }}
               transition={{ duration: 3 }}
-              d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
+              d='M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
             c-7.896,0-14.318-6.424-14.318-14.316c0-7.896,6.422-14.319,14.318-14.319c7.896,0,14.317,6.424,14.317,14.319
@@ -111,7 +110,7 @@ const Contact: React.FC = () => {
             c-0.832,0.195-1.727,0.227-2.516,0.553c-0.134,0.057-0.238,0.16-0.359,0.24c-2.799,1.774-3.16,6.082-0.428,9.292
             c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09c0.03,0.031,0.059,0.062,0.088,0.095
             l0.006-0.006c1.16,1.118,2.535,2.765,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098c3.67-2.021,5.312-6.338,5.312-9.719
-            C32.666,7.326,25.339,0,16.333,0z"
+            C32.666,7.326,25.339,0,16.333,0z'
             />
           </svg>
         </motion.div>
@@ -121,33 +120,32 @@ const Contact: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 4, duration: 1 }}
-          className="flex flex-col gap-4 w-full absolute max-w-sm mx-auto top-[-12.75rem] lg:mx-0 z-50"
-        >
+          className='flex flex-col gap-4 w-full absolute max-w-sm mx-auto top-[-12.75rem] lg:mx-0 z-50'>
           <input
-            type="text"
+            type='text'
             required
-            placeholder="Name"
-            name="name"
-            className="p-4 bg-transparent border border-white text-white rounded-lg"
+            placeholder='Name'
+            name='name'
+            className='p-4 bg-transparent border border-white text-white rounded-lg'
           />
           <input
-            type="email"
+            type='email'
             required
-            placeholder="Email"
-            name="email"
-            className="p-4 bg-transparent border border-white text-white rounded-lg"
+            placeholder='Email'
+            name='email'
+            className='p-4 bg-transparent border border-white text-white rounded-lg'
           />
           <textarea
             rows={8}
-            placeholder="Message"
-            name="message"
-            className="p-4 bg-transparent border border-white text-white rounded-lg"
+            placeholder='Message'
+            name='message'
+            className='p-4 bg-transparent border border-white text-white rounded-lg'
           />
-          <button className="p-4 bg-orange-500 border-none text-white font-medium cursor-pointer z-50">
+          <button className='p-4 bg-orange-500 border-none text-white font-medium cursor-pointer z-50'>
             Submit
           </button>
-          {error && <p className="text-red-500">Error</p>}
-          {success && <p className="text-green-500">Success</p>}
+          {error && <p className='text-red-500'>Error</p>}
+          {success && <p className='text-green-500'>Success</p>}
         </motion.form>
       </div>
     </motion.div>
