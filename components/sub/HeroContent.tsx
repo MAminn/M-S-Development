@@ -47,7 +47,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px] max-md:text-sm max-md:text-center"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
+          We&apos;re a Full Stack Software Engineers with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
@@ -64,7 +64,7 @@ const HeroContent = () => {
             className="Welcome-box max-md:flex max-md:justify-center max-md:items-center py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] z-40 cursor-pointer"
           >
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-            <h1 className=" text-[15px] text-white ">Contact Me!</h1>
+            <h1 className=" text-[15px] text-white ">Contact Us! </h1>
           </motion.div>
         </Link>
       </div>
