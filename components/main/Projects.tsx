@@ -9,7 +9,7 @@ const Projects = () => {
       <h1 className='text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
         Projects
       </h1>
-      <div className='h-full w-full grid lg:grid-cols-3 gap-10 px-10'>
+      <div className='h-full w-full grid lg:grid-cols-3 max-md:grid-cols-1 gap-10 px-10'>
         <ProjectCard
           url='https://brainwave-nine-delta.vercel.app'
           src='/Brainwave.png'
