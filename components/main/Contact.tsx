@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
             name='message'
             className='p-4 bg-transparent border border-white text-white rounded-lg'
           />
-          <button className='p-4 bg-orange-500 border-none text-white font-medium cursor-pointer z-50'>
+          <button className='p-4 bg-orange-500 border-none text-white font-medium cursor-pointer rounded-lg z-50'>
             Submit
           </button>
           {error && <p className='text-red-500'>Error</p>}
